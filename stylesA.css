@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+.black-ops-one-regular {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Domine:wght@400..700&display=swap');
+  
+.domine-regular {
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+header{
+    * {box-sizing: border-box;}
+.bg-img {
+  background-image: url("tomasz-sroka-eaxgNP4cpY8-unsplash.jpg");
+
+  min-height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:sticky;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 50px;
+  width:100%;
+}
+
+/* The navbar */
+.topnav {
+  overflow:visible;
+  background-color:#acb6e5;
+}
+.topnav a {
+  float: left;
+  color:#EA738D;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:  "Black Ops One";
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.logo {
+    font-size: 45px;
+    font-weight: bold;
+    font-family:"Black Ops One";
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+}
+
+body {
+    font-family:"Domine", serif;
+    background-image:url(tomasz-sroka-eaxgNP4cpY8-unsplash.jpg) ; /* Gradient background */
+   
+    color:#EA738D;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding-top: 20px;
+    background:linear-gradient(to right, #74ebd5, #acb6e5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.city-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-btn {
+    font-family:"Black Ops One";
+    padding: 10px 20px;
+    border: none;
+    background: #007BFF;
+    color:#EA738D;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background: #0056b3;
+}
+
+
+.loading-spinner {
+  overflow: hidden;
+  vertical-align:middle;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  align-items: center;
+  width: 20px;
+    height: 20px;
+    display: none;
+    border-radius: 50%;
+    border: 15px solid#EA738D;
+    border-top: 16px solid #3498db;
+    align-self: center;
+    position:absolute;
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.weather-cards {
+
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:  #66A5AD;
+}
+
+.card {
+
+    color: #EA738D;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    background:  #89ABE3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details {
+    margin-bottom: 10px;
+}
+
+.icon img {
+    width: 50px;
+}
+
+.icon h4 {
+    margin-top: 5px;
+}
+
+.current-weather .details h2 {
+  
+    font-size: 24px;
+    font-family: "Domine", serif;
+    margin-bottom: 10px;
+    border-radius: 3px;
+
+}
+
+.current-weather .details h4 {
+    margin: 5px 0;
+    font-family: "Domine", serif;
+}
+
+.current-weather .icon img {
+    width: 100px;
+}
+
+.current-weather .icon h4 {
+    font-size: 18px;
+    font-family: "Domine", serif;
+    margin-top: 10px;
+}
+.footer{
+      padding: 20px ;
+      width: 100%;
+      text-align: center;
+    background: linear-gradient(to right, #74ebd5, #04209b);
+    position :sticky;
+    font-family:"Black Ops One" ;
+    align-items: center;}
+
+.section{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 44px;
+    background:linear-gradient(to right, #74ebd5, #acb6e5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+font-size: large;
+ }
+
+
+
+.social-icon{
+    color:#EA738D;
+    float: right;
+    font-size: 50px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+  }
+.ion-icon {
+    font-size: 64px;
+  }
+  
+  .social-icon:hover{
+    color: white;
+  }
+  .p1{
+    font-weight: 400;
+     font-family: "Black Ops One"
+  }
+  hr.rounded {
+    color: #EA738D; 
+    border-top: 8px solid #bbb;
+    border-radius: 5px;}
+    .temp-toggle {
+      margin-top: 20px;
+  }
+  
+  .temp-btn {
+      padding: 10px 15px;
+      margin: 0 5px;
+      border: none;
+      background: #007BFF;
+      color: #EA738D; 
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
+  }
+  
+  .temp-btn:hover {
+      background: #0056b3;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+      .container {
+          margin: 20px;
+          padding: 15px;
+      }
+  
+      .card {
+          width: 100%;
+          margin: 10px 0;
+      }
+  }
